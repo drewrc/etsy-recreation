@@ -1,0 +1,7 @@
+*, *:before, *:after {
+    Box-sizing: inherit;
+    }
+
+html {
+    box-sizing: border-box;
+} 
