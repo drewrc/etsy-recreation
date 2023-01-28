@@ -1,4 +1,4 @@
-const data = {
+export const data = {
   count: 50100,
   results: [
     {
