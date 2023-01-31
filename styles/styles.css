@@ -5,3 +5,43 @@
 html {
     box-sizing: border-box;
 } 
+.box {
+    display: flex;
+}
+
+#etsy-item-box {
+    height: 400px;
+    overflow: hidden;
+}
+
+.description {
+    overflow: hidden;
+    max-height: 20px;
+}
+
+#add-to-cart {
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+h2 {
+    font-size: 14px;
+    height: 14px;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.general-links {
+    font-size: 10px;
+}
+
+.seller-links a {
+    padding: 10px ;
+    margin: 20px;
+    border-radius: 50%;
+}

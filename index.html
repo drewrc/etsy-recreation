@@ -14,21 +14,66 @@
     <title>Document</title>
   </head>
   <body>
+    <header><h1>Etsy</h1>
+      <nav class="general-links">
+        <a href="#">Gifts for every Valentine </a>
+        <a href="#">Jewelry & Accessories </a>
+        <a href="#">Clothing & Shoes </a>
+        <a href="#">Home & Living</a>
+        <a href="#">Wedding & Party </a>
+        <a href="#">Toys & Entertainment</a>
+        <a href="#">Art & Collectables </a>
+        <a href="#">Craft Supplies</a>
+        <a href="#">Gifts & Giftcards </a>
+      </nav>
+      <nav class="seller-links">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"> </a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+      </nav>
+    </header>
     <div class="container">
       <div class="row parent-container" id="news"></div>
     </div>
 
     <script id="news-item-template" type="text/x-handlebars-template">
+      
       {{#each results}}
-        <div class="col-md box">
+      
+        <div class="col-md-3 box">
+          <main id="etsy-item-box">
+          <img src="{{img}}">
           <h2>{{title}}</h2>
-          <time datetime="date">June 28, 2018</time>
+            <div class="reviews">
+              ☆☆☆☆☆(12)
+            </div>
+            <div class="star-seller">
+              ☆ Star Seller
+            </div>
+            <div class="price">
+             $ {{price}}
+            </div>
+            <div class="ad">
+              Ad by Etsy seller
+            </div>
+            <button id="add-to-cart">+ Add to Cart</button>
+            <a href="#">More like this ➔</a>
           <p>
+          <div class="description">
             {{body}}
-            <button>Hello</button>
+          </div>
+            
           </p>
         </div>
+      </main>
       {{/each}}
+   
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
 
